@@ -7,10 +7,12 @@ public class SnakeLadder {
     public static void main(String[] args) {
 	// write your code here
         int playerPosition = 0;
+        int min = 1;
+        int max = 6;
         System.out.println(+playerPosition+" " + "This is the players starting Position");
-//        int number = (int) Math.floor(Math.random()*7);
-//        System.out.println(number);
-//        System.out.println();
-        System.out.println();
+        System.out.println("Roll the dice to get number ");
+        int number = (int) Math.floor(Math.random()*(max-min+1)+min);
+        System.out.println(number);
+
     }
 }
